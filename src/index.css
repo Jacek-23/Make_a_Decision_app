@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: -20px 0 0 0;
+}
+
+.features {
+  background-color: #282c34;
+}
+
+.features-wrapper {
+  background-color: #282c34;
+  display: flex;
+}
+.feature {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0% 50% -10% 0%;
+  margin-left: -16%;
+}
+
+.feature-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #F34A53;
+  border-radius: 100%;
+  margin: -10px 0 10px;
+}
+
+.shapes {
+  text-align: center;
+}
+
+.upper-triangle {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 154px solid #F34A53;
+	margin: 20px 20px 0;
+  position: relative;
+}
+
+.upper-title {
+  margin: 0 0 0 -44px;
+  position: relative;
+  top: 105px;
+}
+
+.lower-triangle {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 154px solid #F34A53;
+	margin: 20px 20px 0;
+  position: relative;
+  
+}
+
+.lower-title {
+  margin: 0px 0px 0px -62px;
+  bottom: 150px;
+  position: relative;
+
+  
+}
+
+.btn {
+  padding: 1px 2px 1px 2px;
+  font-size: 14px;
+  background-color: black;
+  box-shadow: 2px 4px 10px red;
+  color: #808080;
+  margin: 0px 0px 0px -215px;
+}
+
+.btn:hover {
+  background-color: darken(#DC143C, 3%);
+  color: #ffffff;
+}
+
+.user-manual {
+  margin: 100px 80px 0 30px;
+
+}
+
+.container {
+  text-align: left;
+  margin: 50px 10px;
+  
+}
+
+.preface {
+  text-align: center;
+  color: #6845e9;
+}
+
+.for {
+  margin: 25% 0% 10% 0%;
+}
+
+button {
+  padding: 1px 2px 1px 2px;
+  font-size: 14px;
+  background-color: black;
+  box-shadow: 2px 4px 10px red;
+  color: #808080;
+  margin: 0px 0px 0px 0px;
+}
+
+.for-weights {
+  background-color: #282c34;
+  padding: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: space-around;
+}
+
+.weights-wrapper {
+  background-color: #c5b416;
+  display: flex;
+  margin: 50px 0px 50px 0px;
+  
+}
+
+.weight {
+  text-align: center;
+  text-transform: uppercase;
+  flex: 0 0 10%;
+  max-width: 100%;
+  margin: auto;
+  align-content: top;
+
+}
+
+.weight-title {
+  text-align: center;
+  text-transform: none;
+  color: forestgreen;
+  
+}
+
+.weight-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #ac1e25;
+  border-radius: 100%;
+  align-items: stretch;
+  text-align: center;
+
+}
+
+.against {
+  margin: 25% 0% 10% 0%;
+}
+
+.against-weights {
+  background-color: #282c34;
+  padding: auto;
+}
+
+.caption {
+  font-size: 40px;
+}
+
+.main-list {
+  font-size: 40px;
+  width: 100%;
+}
+
+
+.all-weight {
+  text-align: right;
+}
+
+.one {
+  border: 1px solid white;
+  height: 200px;
+  border-left: none;
+}
+
+.two {
+  border: 1px solid white;
+  height: 200px;
+  border-right: none;
+}
+
+input {
+  width: 650px;
+  height: 40px;
+  margin: 15px 7px 0px 0;
+  font-size: 30px;
+  color: blue;
+  font-weight: bolder;
+  text-align: center;
+  border: 5px solid slateblue;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 40px;
+  color:forestgreen;
+
+}
+
+select {
+  width: 60px;
+  height: 40px;
+  margin: 0px 10px 10px 0px;
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(241, 6, 6);
+  border: 5px solid slateblue;
+  border-radius: 20px;
+}
+
+.three {
+  border: 1px solid white;
+  height: 50px;
+  border-left: none;
+}
+
+.four {
+  border: 1px solid white;
+  height: 50px;
+  border-right: none;
+}
+
+.arguments {
+  width: 80px;
+  color: rgb(241, 6, 6);
+}
+
+.shape {
+  text-align: center;
+  
+}
+
+.end-triangle {
+	width: 0px;
+	height: 0px;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 154px solid #F34A53;
+	margin: 20px 20px 0;
+  text-align: center;
+  color: brown;
+  position: relative;
+  
+}
+
+.end-title {
+  margin: 0px 0px 0px -62px;
+  bottom: 150px;
+  position: relative;
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
