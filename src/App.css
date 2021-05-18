@@ -25,6 +25,10 @@
   margin: -20px 0 0 0;
 }
 
+#my-input {
+  margin: 0px 10px 0 45px;
+}
+
 .features {
   background-color: #282c34;
 }
@@ -43,9 +47,14 @@
 .feature-circle {
   width: 120px;
   height: 120px;
-  background-color: #F34A53;
+  background-color: #f34a53;
   border-radius: 100%;
   margin: -10px 0 10px;
+}
+
+.feature-circle:hover {
+  background-color: darken(#1421dc, 3%);
+  color: #ffffff;
 }
 
 .shapes {
@@ -53,63 +62,110 @@
 }
 
 .upper-triangle {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 154px solid #F34A53;
-	margin: 20px 20px 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 154px solid #f34a53;
+  margin: 20px 20px 0;
   position: relative;
 }
 
 .upper-title {
-  margin: 0 0 0 -44px;
+  margin: 0 0 0 -68px;
   position: relative;
   top: 105px;
+  font-size: 29px;
+  color: white;
+  background: #f34a53;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.upper-title:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
 }
 
 .lower-triangle {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-top: 154px solid #F34A53;
-	margin: 20px 20px 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 154px solid #f34a53;
+  margin: 20px 20px 0;
   position: relative;
-  
 }
 
 .lower-title {
-  margin: 0px 0px 0px -62px;
+  margin: 0px 0px 0px -71px;
   bottom: 150px;
   position: relative;
-
-  
+  font-size: 29px;
+  background: #f34a53;
+  color: white;
+  font-weight: bold;
 }
 
-.btn {
-  padding: 1px 2px 1px 2px;
-  font-size: 14px;
+.solid-base {
+  display: flex;
+  margin: 10px 0 50px -100px;
+  justify-content: space-between;
+}
+
+.btn-solid {
+  padding: 0px 2px 4px 2px;
+  font-size: 16px;
   background-color: black;
   box-shadow: 2px 4px 10px red;
   color: #808080;
-  margin: 0px 0px 0px -215px;
+  margin: 0px 0px 0px -80px;
 }
 
-.btn:hover {
-  background-color: darken(#DC143C, 3%);
+.btn-solid:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
+}
+
+.btn-base {
+  padding: 0px 2px 4px 2px;
+  font-size: 16px;
+  background-color: black;
+  box-shadow: 2px 4px 10px red;
+  color: #808080;
+  margin: 0px -200px 0px 0px;
+}
+
+.btn-base:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
+}
+
+.btn-back {
+  padding: 0px 2px 4px 2px;
+  font-size: 16px;
+  background-color: black;
+  box-shadow: 2px 4px 10px red;
+  color: #808080;
+  margin: 0px 0px 0px 50px;
+}
+
+.btn-back:hover {
+  background-color: darken(#dc143c, 3%);
   color: #ffffff;
 }
 
 .user-manual {
-  margin: 100px 80px 0 30px;
-
+  margin: 200px 80px 0 30px;
 }
 
 .container {
   text-align: left;
   margin: 50px 10px;
-  
 }
 
 .preface {
@@ -117,17 +173,65 @@
   color: #6845e9;
 }
 
+.my-back {
+  display: block;
+  margin: 0 0 0px 0;
+}
+
 .for {
   margin: 25% 0% 10% 0%;
 }
 
-button {
+.for-feature {
+  margin: 0 0 30px 0;
+  font-size: 30px;
+}
+
+.against-feature {
+  margin: 0 0 30px 0;
+  font-size: 30px;
+}
+
+.main-button {
   padding: 1px 2px 1px 2px;
   font-size: 14px;
   background-color: black;
   box-shadow: 2px 4px 10px red;
   color: #808080;
   margin: 0px 0px 0px 0px;
+}
+
+.main-button:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
+}
+
+.for-button {
+  padding: 1px 2px 1px 2px;
+  font-size: 14px;
+  background-color: black;
+  box-shadow: 2px 4px 10px rgb(38, 0, 255);
+  color: #808080;
+  margin: 0px 0px 0px 0px;
+}
+
+.for-button:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
+}
+
+.against-button {
+  padding: 1px 2px 1px 2px;
+  font-size: 14px;
+  background-color: black;
+  box-shadow: 2px 4px 10px rgb(11, 240, 3);
+  color: #808080;
+  margin: 0px 0px 0px 0px;
+}
+
+.against-button:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
 }
 
 .for-weights {
@@ -149,7 +253,6 @@ button {
   background-color: #c5b416;
   display: flex;
   margin: 50px 0px 50px 0px;
-  
 }
 
 .weight {
@@ -159,14 +262,12 @@ button {
   max-width: 100%;
   margin: auto;
   align-content: top;
-
 }
 
 .weight-title {
   text-align: center;
   text-transform: none;
   color: forestgreen;
-  
 }
 
 .weight-circle {
@@ -176,7 +277,6 @@ button {
   border-radius: 100%;
   align-items: stretch;
   text-align: center;
-
 }
 
 .against {
@@ -189,14 +289,23 @@ button {
 }
 
 .caption {
-  font-size: 40px;
+  font-size: 20px;
+  margin: 0 0 0 640px;
+  position: relative;
+}
+
+.argument-list {
+  font-size: 22px;
+  margin: 8px 0 -45px 0;
+  font-weight: bold;
 }
 
 .main-list {
   font-size: 40px;
-  width: 100%;
-}
+  width: 98%;
 
+  margin: 0 15px 0;
+}
 
 .all-weight {
   text-align: right;
@@ -224,12 +333,12 @@ input {
   text-align: center;
   border: 5px solid slateblue;
   border-radius: 20px;
+  background-color: #282c34;
 }
 
 label {
   font-size: 40px;
-  color:forestgreen;
-
+  color: forestgreen;
 }
 
 select {
@@ -241,7 +350,9 @@ select {
   color: rgb(241, 6, 6);
   border: 5px solid slateblue;
   border-radius: 20px;
+  background-color: #282c34;
 }
+
 
 .three {
   border: 1px solid white;
@@ -262,31 +373,160 @@ select {
 
 .shape {
   text-align: center;
-  
 }
 
 .end-triangle {
-	width: 0px;
-	height: 0px;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-top: 154px solid #F34A53;
-	margin: 20px 20px 0;
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 154px solid #f34a53;
+  margin: 20px 0 20px 660px;
   text-align: center;
   color: brown;
   position: relative;
-  
 }
 
 .end-title {
   margin: 0px 0px 0px -62px;
   bottom: 150px;
   position: relative;
-  
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.database {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  display: block;
+  margin: 100px 0 300px 0;
+}
+
+.title-base {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0 0px 0px;
+  position: relative;
+  height: min-content;
+}
+
+.date {
+  border: 3px solid blueviolet;
+  width: 194px;
+  height: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subject {
+  border: 3px solid blueviolet;
+  width: 883px;
+  height: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.decision {
+  border: 3px solid blueviolet;
+  width: 224.5px;
+  height: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.one-base {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 0 0px 0px;
+  align-items: center;
+  height: min-content;
+  align-items: stretch;
+}
+
+.date-1 {
+  border: 2px solid blueviolet;
+  width: 196px;
+  height: min-content;
+  text-align: center;
+}
+
+.subject-1 {
+  border: 2px solid blueviolet;
+  width: 885px;
+  height: min-content;
+  text-align: center;
+}
+
+.decision-1 {
+  border: 2px solid blueviolet;
+  width: 226.5px;
+  height: min-content;
+  text-align: center;
+}
+
+.mark {
+  width: 40px;
+  height: 20px;
+  margin: 0 0 0 0;
+}
+
+.one-mark {
+  width: 180px;
+  height: min-content;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+.open {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.open-button {
+  padding: 1px 2px 1px 2px;
+  font-size: 14px;
+  background-color: black;
+  box-shadow: 2px 4px 10px red;
+  color: #808080;
+  margin: 30px 15px 30px 12px;
+}
+
+.open-button:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
+}
+
+.remove-button {
+  padding: 1px 2px 1px 2px;
+  font-size: 14px;
+  background-color: black;
+  box-shadow: 2px 4px 10px red;
+  color: #808080;
+  margin: 30px 0px 30px 10px;
+}
+
+.remove-button:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
+}
+
+.btn-backend {
+  padding: 0px 2px 4px 2px;
+  font-size: 16px;
+  background-color: black;
+  box-shadow: 2px 4px 10px red;
+  color: #808080;
+  margin: 0px 0px 0px 0px;
+}
+
+.btn-backend:hover {
+  background-color: darken(#dc143c, 3%);
+  color: #ffffff;
 }
 
 @keyframes App-logo-spin {
