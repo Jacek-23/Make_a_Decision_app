@@ -4,6 +4,7 @@ import Summary from './Summary.component';
 class ConSummery extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = { value: '0' };
 
     this.handleChange = this.handleChange.bind(this);
@@ -18,6 +19,7 @@ class ConSummery extends React.Component {
     alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
   }
+
   render() {
     return (
       <div>
@@ -25,6 +27,7 @@ class ConSummery extends React.Component {
           onSubmit={this.handleSubmit}
           onChange={this.handleChange}
           value={this.state.value}
+          argumentsList={this.props.argumentsList}
         />
       </div>
     );

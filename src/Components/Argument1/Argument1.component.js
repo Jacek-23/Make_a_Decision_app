@@ -17,18 +17,18 @@ function Argument1(props) {
         <input
           onChange={onChange}
           value={value}
+          id="name"
           type="text"
-          id="argument"
           name="argument"
         />
         <label for="importance"> Waga </label>
-        <select id="importance" name="importance">
-          <option value="1">- 1 -</option>
-          <option value="2">- 2 -</option>
-          <option value="3">- 3 -</option>
-          <option value="4">- 4 -</option>
-          <option value="5">- 5 -</option>
-          <option value="6">- 6 -</option>
+        <select onChange={onChange} value={value} id="weight">
+          <option value="1">- Istotne -</option>
+          <option value="2">- Dość istotne -</option>
+          <option value="3">- Ważne -</option>
+          <option value="4">- Bardzo ważne -</option>
+          <option value="5">- Priorytet-</option>
+          <option value="6">- Bardzo ważny priorytet-</option>
         </select>
         <button onClick={onSubmit} type="submit" className="for-button">
           _NEXT_
