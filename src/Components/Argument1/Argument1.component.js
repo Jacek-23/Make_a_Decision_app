@@ -5,7 +5,7 @@ function Argument1(props) {
   return (
     <section className="for" id="my-for" name="my-for">
       <form className="for-feature" id="for-feature">
-        <h3 className="feature-title">ZA</h3>
+        <h3 className="feature-title1">ZA</h3>
         <button
           type="submit"
           className="feature-circle"
@@ -23,12 +23,12 @@ function Argument1(props) {
         />
         <label for="importance"> Waga </label>
         <select onChange={onChange} value={value} id="weight">
-          <option value="1">- Istotne -</option>
-          <option value="2">- Dość istotne -</option>
-          <option value="3">- Ważne -</option>
-          <option value="4">- Bardzo ważne -</option>
-          <option value="5">- Priorytet-</option>
-          <option value="6">- Bardzo ważny priorytet-</option>
+          <option value="1">- 1 -</option>
+          <option value="2">- 2 -</option>
+          <option value="3">- 3 -</option>
+          <option value="4">- 4 -</option>
+          <option value="5">- 5 -</option>
+          <option value="6">- 6 -</option>
         </select>
         <button onClick={onSubmit} type="submit" className="for-button">
           _NEXT_

@@ -102,8 +102,8 @@
 }
 
 .lower-title {
-  margin: 0px 0px 0px -71px;
-  bottom: 150px;
+  margin: 6px 0px 0px -71px;
+  bottom: 159px;
   position: relative;
   font-size: 29px;
   background: #f34a53;
@@ -187,6 +187,16 @@
   font-size: 30px;
 }
 
+.feature-title1 {
+  font-size: 35px;
+  color: forestgreen;
+}
+
+.feature-title2 {
+  font-size: 35px;
+  color: darkorange;
+}
+
 .against-feature {
   margin: 0 0 30px 0;
   font-size: 30px;
@@ -210,7 +220,7 @@
   padding: 1px 2px 1px 2px;
   font-size: 14px;
   background-color: black;
-  box-shadow: 2px 4px 10px rgb(38, 0, 255);
+  box-shadow: 2px 4px 10px rgb(11, 240, 3);
   color: #808080;
   margin: 0px 0px 0px 0px;
 }
@@ -224,7 +234,7 @@
   padding: 1px 2px 1px 2px;
   font-size: 14px;
   background-color: black;
-  box-shadow: 2px 4px 10px rgb(11, 240, 3);
+  box-shadow: 2px 4px 10px darkorange;
   color: #808080;
   margin: 0px 0px 0px 0px;
 }
@@ -250,7 +260,7 @@
 }
 
 .weights-wrapper {
-  background-color: #c5b416;
+  background-color: #20201f;
   display: flex;
   margin: 50px 0px 50px 0px;
 }
@@ -264,10 +274,24 @@
   align-content: top;
 }
 
+.argument {
+  color: darkorange;
+}
+
+.importance {
+  color: darkorange;
+}
+
 .weight-title {
   text-align: center;
   text-transform: none;
   color: forestgreen;
+}
+
+.weight-title2 {
+  text-align: center;
+  text-transform: none;
+  color: rgb(240, 136, 17);
 }
 
 .weight-circle {
@@ -288,39 +312,109 @@
   padding: auto;
 }
 
+.list {
+  display: block;
+}
+
 .caption {
+  display: block;
+  justify-content: center;
   font-size: 20px;
-  margin: 0 0 0 640px;
+  margin: 0 0 10px 585px;
   position: relative;
 }
 
 .argument-list {
   font-size: 22px;
-  margin: 8px 0 -45px 0;
+  margin: 8px 0 0px 0;
   font-weight: bold;
 }
 
-.main-list {
-  font-size: 40px;
-  width: 98%;
+.box-list {
+  display: flex;
+  margin: 10px 0 0 0;
+}
 
-  margin: 0 15px 0;
+.validity {
+  width: 60px;
+  height: 40px;
+  margin: 0px 10px 10px 10px;
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(241, 6, 6);
+  border: 5px solid slateblue;
+  border-radius: 20px;
+  background-color: #282c34;
+}
+
+.yes {
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.yes2 {
+  color: darkorange;
+  margin: 0 0 0px 10px;
+}
+
+.title-list {
+  text-align: center;
+  color: green;
+  margin: 0 0 5px 0;
+}
+
+.main-list {
+  font-size: 35px;
+  width: 700px;
+  margin: 0 0 0 0;
+  border-top: 3px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  border-bottom: 3px solid blueviolet;
+  text-align: center;
+  color: slateblue;
+  text-align: start;
+}
+
+.main-list2 {
+  font-size: 35px;
+  width: 700px;
+  margin: 0 0 0 0;
+  border-top: 3px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 3px solid blueviolet;
+  color: slateblue;
+  text-align: start;
+}
+
+.title-list2 {
+  text-align: center;
+  color: darkorange;
+  margin: 0 0 5px 0;
+}
+
+.box-list2 {
+  display: flex;
+  margin: 0 0 0 0;
+}
+
+.main-list3 {
+  width: 700px;
+  height: 70px;
+  border-top: 1px solid blueviolet;
+}
+
+.main-list4 {
+  width: 700px;
+  height: 70px;
+  border-top: 1px solid blueviolet;
+}
+
+.sum {
+  color: darkorange;
 }
 
 .all-weight {
   text-align: right;
-}
-
-.one {
-  border: 1px solid white;
-  height: 200px;
-  border-left: none;
-}
-
-.two {
-  border: 1px solid white;
-  height: 200px;
-  border-right: none;
 }
 
 input {
@@ -328,7 +422,7 @@ input {
   height: 40px;
   margin: 15px 7px 0px 0;
   font-size: 30px;
-  color: blue;
+  color: slateblue;
   font-weight: bolder;
   text-align: center;
   border: 5px solid slateblue;
@@ -353,25 +447,9 @@ select {
   background-color: #282c34;
 }
 
-.three {
-  border: 1px solid white;
-  height: 50px;
-  border-left: none;
-}
-
-.four {
-  border: 1px solid white;
-  height: 50px;
-  border-right: none;
-}
-
-.arguments {
-  width: 80px;
-  color: rgb(241, 6, 6);
-}
-
 .shape {
   text-align: center;
+  margin: 0 0 0 0px;
 }
 
 .end-triangle {
@@ -380,7 +458,7 @@ select {
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   border-top: 154px solid #f34a53;
-  margin: 20px 0 20px 660px;
+  margin: -40px 0 20px 605px;
   text-align: center;
   color: brown;
   position: relative;

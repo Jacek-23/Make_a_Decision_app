@@ -7,16 +7,16 @@ class MainItem extends React.Component {
         <div className="container">
           <div className="features-wrapper">
             <form className="feature">
-              <h3 className="feature-title">Za</h3>
+              <h3 className="feature-title1">Za</h3>
               <button
-                type="button"
+                type="submit"
                 className="feature-circle"
                 id="feature-circle"
                 href="my-for"
               ></button>
             </form>
             <article className="feature">
-              <h3 className="feature-title">Przeciw</h3>
+              <h3 className="feature-title2">Przeciw</h3>
               <button
                 type="button"
                 className="feature-circle"

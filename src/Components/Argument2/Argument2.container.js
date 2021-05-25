@@ -1,38 +1,37 @@
 import React from 'react';
-import Summary from './Summary.component';
+import Argument2 from './Argument2.component';
 
-class ConSummery extends React.Component {
+class ConArgument2 extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { value: '0' };
+    this.state = {
+      name: '',
+      weight: '',
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
   handleChange(event) {
-    this.setState({ value: event.target.value });
+    this.setState({ [event.target.id]: event.target.value });
   }
-
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    this.props.addArgument(this.state.name, this.state.weight);
     event.preventDefault();
   }
 
   render() {
     return (
       <div>
-        <Summary
+        <Argument2
           onSubmit={this.handleSubmit}
           onChange={this.handleChange}
           value={this.state.value}
-          argumentsList={this.props.argumentsList}
-          argumentsList2={this.props.argumentsList2}
         />
       </div>
     );
   }
 }
 
-export default ConSummery;
+export default ConArgument2;
