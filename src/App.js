@@ -13,7 +13,7 @@ import Summary from './Components/Summary/Summary.container';
 
 import React, { useState } from 'react';
 
-function App() {
+function App(props) {
   const [state, setState] = useState({
     argumentsList: [],
     argumentsList2: [],

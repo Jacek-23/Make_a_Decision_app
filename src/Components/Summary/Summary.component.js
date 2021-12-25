@@ -150,7 +150,7 @@ function Summary(props) {
         <div className="box-list" id="box-list">
           <div className="main-list" id="main-list">
             <div className="title-list" id="title-list">
-              ZA 
+              ZA
             </div>
             {argumentsList.map((argument, index) => (
               <div key={index}>
