@@ -27,7 +27,7 @@ class ConArgument1 extends React.Component {
         <Argument1
           onSubmit={this.handleSubmit}
           onChange={this.handleChange}
-          value={this.state.value}
+          value={this.state.value} 
         />
       </div>
     );

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import MainItem from './Components/MainItem/MainItem';
 import ListItem from './Components/ListItem/ListItem';

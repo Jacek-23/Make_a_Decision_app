@@ -3,9 +3,19 @@ import React from 'react';
 function Argument1(props) {
   const { onChange, value, onSubmit } = props;
   return (
+
     <section className="for" id="my-for" name="my-for">
       <form className="for-feature" id="for-feature">
-        <h3 className="feature-title1">ZA</h3>
+        <h3 className="feature-title1">
+          <div>
+            { value > 0 ? (
+              <p> {props.argumentsList} </p>
+             ) : (
+              <p> {props.argumentsList2} </p>
+             )}
+          </div>
+          ZA
+        </h3>
         <button
           type="submit"
           className="feature-circle"
@@ -30,7 +40,10 @@ function Argument1(props) {
           <option value="5">- 5 -</option>
           <option value="6">- 6 -</option>
         </select>
-        <button onClick={onSubmit} type="submit" className="for-button">
+        <button 
+          onClick={onSubmit} 
+          type="submit" 
+          className="for-button">
           _NEXT_
         </button>
       </form>
@@ -43,51 +56,39 @@ function Argument1(props) {
           <div className="weights-wrapper">
             <article className="weight">
               <h5 className="weight-title">Istotne</h5>
-              <bottom onClick={onSubmit} type="submint">
                 <div className="weight-circle" id="weight-circle">
                   <h2>1</h2>
                 </div>
-              </bottom>
             </article>
             <article className="weight">
               <h5 className="weight-title">Dość istotne</h5>
-              <bottom onClick={onSubmit} type="submit">
                 <div className="weight-circle" id="weight-circle">
                   <h2>2</h2>
                 </div>
-              </bottom>
             </article>
             <article className="weight">
               <h5 className="weight-title">Ważne</h5>
-              <bottom onClick={onSubmit} type="submit">
                 <div className="weight-circle" id="weight-circle">
                   <h2>3</h2>
                 </div>
-              </bottom>
             </article>
             <article className="weight">
               <h5 className="weight-title">Bardzo ważne</h5>
-              <bottom onClick={onSubmit} type="submit">
                 <div className="weight-circle" id="weight-circle">
                   <h2>4</h2>
                 </div>
-              </bottom>
             </article>
             <article className="weight">
               <h5 className="weight-title">Priorytet</h5>
-              <bottom onClick={onSubmit} type="submit">
                 <div className="weight-circle" id="weight-circle">
                   <h2>5</h2>
                 </div>
-              </bottom>
             </article>
             <article className="weight">
               <h5 className="weight-title">Najważniejszy priorytet</h5>
-              <bottom onClick={onSubmit} type="submit">
                 <div className="weight-circle" id="weight-circle">
                   <h2>6</h2>
                 </div>
-              </bottom>
             </article>
           </div>
         </div>

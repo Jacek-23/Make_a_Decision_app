@@ -4,7 +4,7 @@ function Heading(props) {
   const { onChange, value, onSubmit } = props;
   return (
     <div className="Main-box" id="Main-box">
-      <h1>TEMAT ROZWAŻAŃ</h1>
+      <h2>TEMAT ROZWAŻAŃ</h2>
       <input
         onChange={onChange}
         value={value}

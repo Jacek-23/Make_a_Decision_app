@@ -150,14 +150,12 @@ function Summary(props) {
         <div className="box-list" id="box-list">
           <div className="main-list" id="main-list">
             <div className="title-list" id="title-list">
-              ZA
+              ZA 
             </div>
             {argumentsList.map((argument, index) => (
               <div key={index}>
-                {' '}
                 <label className="yes" id="yes">
-                  {' '}
-                  ⱱ{' '}
+                  ⱱ {''}
                 </label>
                 {argument.name}
                 <label for="validity"></label>
@@ -166,7 +164,7 @@ function Summary(props) {
                   className="validity"
                   id="validity"
                 >
-                  <option value="1">- 1 - </option>
+                  <option value="1">- 1 -</option>
                   <option value="2">- 2 -</option>
                   <option value="3">- 3 -</option>
                   <option value="4">- 4 -</option>
@@ -183,10 +181,8 @@ function Summary(props) {
             </div>
             {argumentsList2.map((argument, index) => (
               <div key={index}>
-                {' '}
                 <label className="yes2" id="yes2">
-                  {' '}
-                  ⱱ{' '}
+                  ⱱ {''}
                 </label>
                 {argument.name}
                 <label for="validity"></label>
@@ -195,12 +191,12 @@ function Summary(props) {
                   className="validity"
                   id="validity"
                 >
-                  <option value="1">- 1 - </option>
-                  <option value="2">- 2 -</option>
-                  <option value="3">- 3 -</option>
-                  <option value="4">- 4 -</option>
-                  <option value="5">- 5 -</option>
-                  <option value="6">- 6 -</option>
+                  <option value="-1">- 1 -</option>
+                  <option value="-2">- 2 -</option>
+                  <option value="-3">- 3 -</option>
+                  <option value="-4">- 4 -</option>
+                  <option value="-5">- 5 -</option>
+                  <option value="-6">- 6 -</option>
                 </select>
               </div>
             ))}
