@@ -8,4 +8,5 @@ Przy kawie bądź herbacie przez debaty, rozważania dojdź do swego rozwiązani
 * Pamiętaj, że argumentów "ZA" i "PPRZECIW" nie musi być tyle samo.
 
 Na pomysł aplikacji "Podejmij Decyzję" wpadłem na początku nauki programowania, jednakże potrzebowałem czasu na przyswojenie sobie wiedzy do jej skonstruowania. Inspiracją do jej stworzenia był przypadek mojej przyjaciółki, która miała w krótkim czasie podjąć ważną dla siebie decyzje odnośnie jej awansu służbowego, czy go przyjąć, czy odrzucić i poprosiła mnie o pomoc. Podsunąłem jej kartkę papieru i zaproponowałem wypisanie argumentów ZA i PRZECIW podjęciem tej decyzji, a następnie określenia wag tych argumentów. Okazało się, że na samym etapie określania wag tych argumentów zrozumiała jaką powinna podjąć najlepszą dla siebie decyzję. Stąd pomysł na aplikację, która może pomóc w podjęciu decyzji, a dokładniej uświadomić i uszeregować ważność argumentów przemawiających za podjęciem właściwej decyzji.
+
 Mimo, że wizualna strona aplikacji jest gotowa w czasie dalszej pracy będzie ona udoskonalana, a obecnie jestem na etapie podłączania logiki.
